@@ -1,0 +1,109 @@
+body{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+}
+.buscador {
+    min-width: 100px;
+    border: 0px;
+}
+h1 {
+    color: #0d6efd;
+}
+.lacaja {
+    display: none;
+}
+.esconder {
+    display: block;
+}
+.buscador::placeholder {
+    color: #0d6efd;
+}
+a, .nav-link {
+    color: black;
+}
+.carousel-inner, .carousel-item {
+    width: 100%;
+    height: 600px;
+}
+
+img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-indicators1 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-right: 15%;
+    margin-bottom: 1rem;
+    margin-left: 15%;
+    list-style: none;
+}
+
+.carousel-indicators1 button.active {
+    opacity: 1;
+}
+.carousel-indicators1 button {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #0d6efd;
+    background-clip: padding-box;
+    border: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+    color: black;
+}
+.caja {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: black;
+    color:aliceblue;
+    margin: auto;
+}
+.carousel-indicators button {
+    border-radius: 50%;
+    background: #0d6efd;
+}
+
+@media only screen and (max-width: 600px) {
+    .lacaja {
+        display: block;
+    }
+    .esconder::after {
+        display: none;
+    }
+}
+
+.formulario {
+    max-width: 500px;
+    min-width: 300px;
+    width: auto;
+    margin: auto;
+}
+
+.formulario input {
+     width: 60%;
+     float: left;
+}
+.formulario button {
+    width: 30%;
+    float: left;
+}
